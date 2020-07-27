@@ -1,0 +1,130 @@
+body {
+	font-size: 15px;
+}
+
+h1 {
+	font-size: 175%;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	margin: 70px;
+}
+.row {
+	position: relative;
+	height: 200px;
+	margin: 100px 20px;
+}
+
+.column {
+	border: 2px solid black;
+	height: 200px;
+	background-color: turquoise;
+}
+
+#item1 {
+	position: relative;
+	width: 30%;
+}
+
+#item1 .subtitle {
+	background-color: pink;
+}
+
+#item2 {
+	position: absolute;
+	width: 30%;
+	top: 0px;
+	left: 500px;
+}
+
+#item2 .subtitle {
+	background-color: red;
+	color: white;
+}
+
+#item3 {
+	position: absolute;
+	width: 30%;
+	right: 0px;
+	top: 00px;
+}
+
+#item3 .subtitle {
+	background-color: wheat;
+}
+
+.text {
+	padding: 40px 10px 20px 10px;
+}
+
+.subtitle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 2px solid black;
+	width: 20%;
+	text-align: center;
+	font-size: 125%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.row {
+		position: relative;
+
+		margin: 0px;
+		height: auto;
+		width: 130%;
+	}
+
+	#item1 {
+		position: absolute;
+		width: 50%;
+	}
+
+	#item2 {
+		position: relative;
+		width: 50%;
+		left: 586px;
+		top: 15px;
+	}
+
+	#item3 {
+		position: relative;
+		width: 100%;
+
+		bottom: 0px;
+	}
+
+	.column {
+		height: auto;
+		margin: 15px 0px 0px 0px;
+	}
+	.text {
+	}
+}
+
+@media (max-width: 767px) {
+	.row {
+		position: absolute;
+	}
+
+	#item1 {
+		position: relative;
+		width: 100%;
+	}
+
+	#item2 {
+		position: relative;
+		width: 100%;
+		left: 0px;
+	}
+
+	#item3 {
+		position: relative;
+		width: 100%;
+	}
+	.column {
+		margin: 40px 0px 0px 0px;
+		height: auto;
+	}
+}
